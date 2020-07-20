@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+    <bean id="employeelist" class="com.cognizant.springlearn.dao.EmployeeDao">
+    
+    <property name="emp">
+  <list>
+    <bean class="com.cognizant.springlearn.bean.Employee">
+        <constructor-arg name="name" value = "samaira"/>
+        <constructor-arg name="dateofbirth" value = "28/03/1998" type="String"/>
+        <constructor-arg name="id" value = "1" type="int"/>
+        <constructor-arg name="salary" value = "8000" type="int"/>
+        
+    </bean>
+   <bean class="com.cognizant.springlearn.bean.Employee">
+        <constructor-arg name="name" value = "sparsh"/>
+        <constructor-arg name="dateofbirth" value = "28/03/1998" type="String"/>
+       <constructor-arg name="id" value = "2" type="int"/>
+        <constructor-arg name="salary" value = "8000" type="int"/>
+       
+       
+    </bean>
+    <bean class="com.cognizant.springlearn.bean.Employee">
+        <constructor-arg name="name" value = "yash"/>
+         <constructor-arg name="dateofbirth" value = "28/03/1998" type="String"/>
+        <constructor-arg name="id" value = "3" type="int"/>
+        <constructor-arg name="salary" value = "8000" type="int"/>
+       
+    </bean>
+    
+  </list>
+</property>
+    </bean>
+    
+    
+    
+    <bean id="department" class="com.cognizant.springlearn.dao.DepartmentDao">
+    
+    <property name="dept">
+  <list>
+    <bean class="com.cognizant.springlearn.bean.Department">
+        <constructor-arg name="name" value = "Forest"/>
+        <constructor-arg name="code" value = "Frst"/>
+    </bean>
+   <bean class="com.cognizant.springlearn.bean.Department">
+        <constructor-arg name="name" value = "Finance"/>
+        <constructor-arg name="code" value = "Fin"/>
+    </bean>
+    <bean class="com.cognizant.springlearn.bean.Department">
+        <constructor-arg name="name" value = "Travel"/>
+        <constructor-arg name="code" value = "Tvl"/>
+    </bean>
+    
+  </list>
+</property>
+    </bean>
+
+    
+</beans>
+
+
+
+
+
+
